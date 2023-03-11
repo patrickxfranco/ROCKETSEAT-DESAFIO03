@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>PROJETO03DESAFIO01</title>
+</head>
+<body>
+
+  <div class="page">
+
+    <header>
+      <h1>MENTORIA</h1>
+      <p>Preencha o formulário abaixo para<br/>agendar a sua mentoria</p>
+    </header>
+
+    <form id="agendamento-mentoria">
+
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <div class="names-wrapper">
+
+          <div class="input-wrapper">
+
+            <label for="input-name">Nome</label>
+            <input type="text" name="input-name" id="input-name">
+
+          </div>
+
+
+          <div class="input-wrapper">
+            
+            <label for="input-surname">Sobrenome</label>
+            <input type="text" name="input-surname" id="input-surname">
+
+          </div>
+
+        </div>
+
+
+        <div class="input-wrapper">
+
+          <label for="input-email">Email<span>(Digite um email válido)</span></label>
+          <input type="email" name="input-email" id="input-email">
+
+        </div>
+
+
+        <div class="input-wrapper">
+
+          <label for="input-password">Senha<span>(Mínimo de 6 caracteres)</span></label>
+          <input type="password" name="input-password" id="input-password">
+
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações do Mentor</legend>
+
+        <div class="input-wrapper">
+          <label for="input-mentorName">Nome do seu mentor<span>(Selecione uma opção válida)</span></label>
+          <select class="input-wrapper" name="input-mentorName" id="input-mentorName">
+            <option value="option-null">Selecione uma opção</option>
+            <option value="option-flavioDias">Flávio Dias</option>
+            <option value="option-marcoSilveira">Marco Silveira</option>
+            <option value="option-harryCampestre">Harry Campestre</option>
+            <option value="option-daniloPersonas">Danilo Personas</option>
+            <option value="option-glaucioPereira">Glaucio Pereira</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Seus horários disponíveis</legend>
+
+        <fieldset class="mentority-wrapper">
+          <legend>Primeira Mentoria</legend>
+          <div class="input-wrapper">
+            <label for="input-date">Data<span>(DD/MM/AAAA)</span></label>
+            <input type="date" name="input-date" id="input-date">
+          </div>
+          <div class="input-wrapper">
+            <label for="input-timeStart">Das</label>
+            <input type="time" name="input-timeStart" id="input-timeStart">
+          </div>
+          <div class="input-wrapper">
+            <label for="input-timeEnd">Até</label>
+            <input type="time" name="input-timeEnd" id="input-timeEnd">
+          </div>
+        </fieldset>
+
+        <fieldset class="mentority-wrapper">
+          <legend>Segunda Mentoria</legend>
+          <div class="input-wrapper">
+            <label for="input-date2">Data<span>(DD/MM/AAAA)</span></label>
+            <input type="date" name="input-date2" id="input-date2">
+          </div>
+          <div class="input-wrapper">
+            <label for="input-timeStart2">Das</label>
+            <input type="time" name="input-timeStart2" id="input-timeStart2">
+          </div>
+          <div class="input-wrapper">
+            <label for="input-timeEnd2">Até</label>
+            <input type="time" name="input-timeEnd2" id="input-timeEnd2">
+          </div>
+        </fieldset>
+
+      </fieldset>
+
+    </form>
+
+    <footer>
+      <input form="agendamento-mentoria" type="submit" value="Salvar">
+    </footer>
+
+  </div>
+
+</body>
+</html>
